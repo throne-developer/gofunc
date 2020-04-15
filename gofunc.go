@@ -109,8 +109,19 @@ func genTestFileContent(packageName, testFuncName, funcname string, printResult 
 import (
 	"fmt"
 	"testing"
+	"math"
+	"strconv"
+	"strings"
+	"time"
 )
 func %s(t *testing.T) {
+	if false {
+		time.Now()
+		math.Floor(0.0)
+		strconv.Itoa(1)
+		strings.TrimSpace("")
+	}
+	
 	fmt.Print(">> ")
 	%s
 }`
