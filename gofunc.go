@@ -133,7 +133,7 @@ func %s(t *testing.T) {
 }
 
 func writeTempTestFile(content string, dir string) (filePath string, writeErr error) {
-	filePath = fmt.Sprintf(`%s\temp_gofunc_test.go`, dir)
+	filePath = fmt.Sprintf(`%s/temp_gofunc_test.go`, dir)
 	writeErr = writeFileWithLines(filePath, []string{content})
 	return
 }
